@@ -21,9 +21,13 @@ namespace AccessModifierAndMethods
 {
     static void Main()
     {
-        AccessModifier selectionStatment = new AccessModifier();
-        selectionStatment.DOSomething();
+        AccessModifier accessModifier = new AccessModifier();
+        accessModifier.DOSomething();
 
+        People people = new People();
+        people.name = "Shrestha";
+        people.Number = 10;
+        var x = people.Address;
 
 
 

@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
-
+namespace AccessModifierAndMethods
+{ 
 class Methods
 {
     void PrintInfo() // here the function takes no arguments
@@ -20,7 +21,7 @@ class Methods
     }
     void PrintSomething(string Message) // here the function takes one argument
     {
-        Console.WriteLine(message);
+        Console.WriteLine(Message);
     }
 
     float Multiply(float firstNum, float secondNum) // here the function take two arguments
@@ -74,4 +75,5 @@ class Methods
     //Expression bodied method syntax
     float Addition(float firstNum, float secondNum) => firstNum + secondNum;
 
+}
 }

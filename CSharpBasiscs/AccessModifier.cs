@@ -2,7 +2,7 @@ using System;
 namespace AccessModifierAndMethods
 {
 
-class AccessModifier // default is internal
+ public class AccessModifier // default is internal
 {
     int x;
     int y;

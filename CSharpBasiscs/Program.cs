@@ -40,6 +40,13 @@ namespace LearningClasses
         person.Age = 12;
 
         var person4 = new Person("Har3","Lamatar", 23);
+        // Accessing Static member
+        var x = Person.ScientificName;
+        Person.Do();
+        var y = Math.Sqrt(123);
+
+        var s = Calculator.Sum<int>(2,5);
+        var s1 = Calculator.Sum<decimal>(2.5m, 504.5m);
     }
 }  
  }

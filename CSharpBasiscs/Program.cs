@@ -15,6 +15,7 @@
 //     }
 
 using System;
+using static Rectangle;
 //namespace AccessModifierAndMethods
 namespace LearningClasses
 {
@@ -47,6 +48,28 @@ namespace LearningClasses
 
         var s = Calculator.Sum<int>(2,5);
         var s1 = Calculator.Sum<decimal>(2.5m, 504.5m);
+
+        Rectangle rectangle = new Rectangle(45.2, 55.2);
+        rectangle.Breadth = 23.6;
+        rectangle.Length = 22.2;
+        var Area = rectangle.GetArea();
+
+        // Inheritance Example
+      
+        var r = new Rectangle(23.5, 65.5);
+        var r1 = new Rectangle(1254.5, 56.25);
+        r.PrintDetails();
+        r1.PrintDetails();
+        r1.GetDiagonalLength();
+
+        
+        var k = new Square(89.52);
+        k.PrintDetails();
+
+        
+        var c = new Circle(56.54);
+        c.PrintDetails();
+
     }
 }  
  }

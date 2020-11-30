@@ -16,6 +16,7 @@
 
 using System;
 using static Rectangle;
+using FileDirectoryHandling;
 //namespace AccessModifierAndMethods
 namespace LearningClasses
 {
@@ -56,21 +57,24 @@ namespace LearningClasses
 
         // Inheritance Example
       
-        var r = new Rectangle(23.5, 65.5);
-        var r1 = new Rectangle(1254.5, 56.25);
-        r.PrintDetails();
-        r1.PrintDetails();
-        r1.GetDiagonalLength();
+       // var r = new Rectangle(23.5, 65.5);
+      // var r1 = new Rectangle(1254.5, 56.25);
+      //  r.PrintDetails();
+       // r1.PrintDetails();
+       // r1.GetDiagonalLength();
 
         
-        var k = new Square(89.52);
-        k.PrintDetails();
+        // var k = new Square(89.52);
+        // k.PrintDetails();
 
         
-        var c = new Circle(56.54);
-        c.PrintDetails();
+        // var c = new Circle(56.54);
+        // c.PrintDetails();
 
     }
+
+    //FileIO file = new FileIO();
+    //file.LearnDirectoryInfo();
 }  
  }
 

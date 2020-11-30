@@ -68,6 +68,7 @@ class C : B
 }
 
 // Multiple inheritance
+// Class- Is-a relationship, Interface - Has-a relationship 
 class D : C, IX, IY
 {
 

@@ -1,0 +1,4 @@
+mvc - Modle View Controller
+.cshtml = We can both write html and cs code in this extension
+   Because of Razor View Engine .cshtml is possible
+   

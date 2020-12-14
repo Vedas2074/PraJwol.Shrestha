@@ -1,0 +1,26 @@
+@model List<DepartmentModel>
+
+<h1> This is view of DepartmentController!</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Department Name</th>
+      <th scope="col">Department Code</th>
+      <th scope="col">Department Staff No.</th>
+      <th scope="col">Department Avaiablity</th>
+    </tr>
+  </thead>
+  <tbody>
+     @foreach (var department in Model)
+     {
+         <tr scope="row">
+              <td>@department.DepartmentName</td>
+              <td>@department.DepartmentCode</td>
+              <td>@department.DepartmentStaffNumber</td>
+              <td>@department.DepartmentAvaiablity</td>
+              
+          </tr>
+     }
+  </tbody>
+</table>

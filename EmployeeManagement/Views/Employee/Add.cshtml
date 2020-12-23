@@ -1,0 +1,36 @@
+@model Person
+@{
+    ViewData["Title"] = "Add Employee";
+}   
+<h3>Add New Employee!</h3>
+<hr/>
+
+<form asp-controller="Employee" asp-action="Add" method="POST">
+  <div class="mb-3">
+    <label asp-for="FirstName" class="form-label"></label>
+    <span class="text-danger" asp-validation-for="FirstName"></span>
+    <input type="text" class="form-control" asp-for="FirstName" placeholder="Enter Your First Name">
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+    <label asp-for="LastName" class="form-label"></label>
+     <span class="text-danger" asp-validation-for="LastName"></span>
+    <input type="text" class="form-control" asp-for="LastName" placeholder="Enter Your Last Name">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Address" class="form-label"></label>
+    <span class="text-danger" asp-validation-for="Address"></span>
+    <textarea class="form-control" asp-for="Address" placeholder="Enter Address"></textarea>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Gender" class="form-label"></label>
+      <span class="text-danger" asp-validation-for="Gender"></span>
+    <input type="text" class="form-control" asp-for="Gender" placeholder="Enter Gender">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Salary" class="form-label"></label>
+    <input type="number" class="form-control" asp-for="Salary" placeholder="Enter Salary">
+  </div>
+  <button type="submit" class="btn btn-primary">Add Employee</button>
+</form>
+

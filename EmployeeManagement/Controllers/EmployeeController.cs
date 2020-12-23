@@ -1,18 +1,32 @@
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
 public class EmployeeController : Controller
 {
     public ActionResult Index()
     {
+        var employees = Person.GetEmployees();
+        return View(employees);
         
-        // Object Initilizer Syntax
-        Person employee1 = new Person(){ FirstName = "PraJwol", LastName = "Shrestha", Address = "Lamatar", Gender ='M'};
-        Person employee2 = new Person(){ FirstName = "Nick", LastName = "Shrestha", Address = "London", Gender ='M'};
-        Person employee3 = new Person(){ FirstName = "Sam", LastName = "Shrestha", Address = "USA", Gender ='M'};
+    }
 
-        List<Person> employee = new List<Person> {employee1, employee2, employee3};
+    public ActionResult Detail(string FirstName)
+    {
+        var employees = Person.GetEmployees();
+        Person employee = employees.FirstOrDefault(x=>x.FirstName == FirstName);
         return View(employee);
+
+    }
+    public ActionResult Add()   
+    {
+    return View();
+    }
+
+[HttpPost]
+    public ActionResult<string> Add(Person person)
+    {
+        return "Record Saved";
     }
 
 }
